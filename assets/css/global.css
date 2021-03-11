@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	unicode-bidi: plaintext;
+
+	font-family: KoHo, Laila, Georgia, "Segoe UI", serif;
+	border: none;
+	outline: none;
+	/* background: transparent; */
+}
+
+/*! Scrollbar */
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background: #0001;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #0004;
+}
+
+/*! Tags */
+/* body { */
+/* padding: 1em; */
+/* font-family: KoHo, Laila, Georgia, "Segoe UI", serif; */
+/* } */
+
+ol.default,
+ul.default {
+	margin: 0.5em 1em;
+	padding: 0.5em 0 0.5em 1em;
+}
+
+ol:not(.default),
+ul:not(.default) {
+	list-style: none;
+}
+
+a:not(.default) {
+	text-decoration: none;
+	color: inherit;
+}

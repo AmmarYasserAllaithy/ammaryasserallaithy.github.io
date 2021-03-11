@@ -1,0 +1,19 @@
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.circle {
+	border-radius: 50%;
+}
+
+.ellipse {
+	border-radius: 50em;
+}
+
+.rounded {
+	border-radius: 1em;
+}

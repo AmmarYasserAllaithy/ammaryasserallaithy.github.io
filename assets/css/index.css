@@ -1,0 +1,62 @@
+@import "global.css";
+@import "custom.css";
+
+/*! Structure */
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100vh;
+}
+
+.left {
+	padding: 1em;
+}
+
+.right {
+	display: block;
+}
+
+/*! Elements */
+.info {
+	font-size: 1.5em;
+	margin: 0.5em;
+}
+
+.name {
+	color: #436f9a;
+}
+
+.desc {
+	opacity: 0.7;
+}
+
+a.a {
+	display: inline-block;
+	background: #f6951c;
+	color: white;
+	padding: 0.5em 1em;
+	cursor: pointer;
+}
+
+/*! Narrow screens */
+@media screen and (max-width: 1000px) {
+	.container {
+		display: block;
+	}
+
+	.container,
+	.left,
+	.right {
+		height: auto;
+	}
+
+	.left,
+	.right {
+		width: 100%;
+	}
+
+	.info {
+		font-size: 1.1em;
+	}
+}
