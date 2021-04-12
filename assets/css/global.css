@@ -41,7 +41,9 @@ ul:not(.default) {
 	list-style: none;
 }
 
-a:not(.default) {
+a {
 	text-decoration: none;
 	color: inherit;
+	cursor: pointer;
+	display: inline-block;
 }

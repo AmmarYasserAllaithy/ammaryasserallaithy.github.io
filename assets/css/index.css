@@ -31,12 +31,24 @@
 	opacity: 0.7;
 }
 
-a.a {
-	display: inline-block;
+.cv {
+	padding: 0.5em 1em;
 	background: #f6951c;
 	color: white;
-	padding: 0.5em 1em;
-	cursor: pointer;
+}
+
+.link {
+	padding: 0.5em;
+	background: transparent;
+	color: #c7e2f6;
+}
+
+.link:hover {
+	color: #436f9a;
+}
+
+.link:last-of-type {
+	border-left: 1px dashed;
 }
 
 /*! Narrow screens */
