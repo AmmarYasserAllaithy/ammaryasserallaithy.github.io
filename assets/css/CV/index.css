@@ -278,6 +278,7 @@ h3::after {
 /*! Projects */
 .company {
 	opacity: 0.7;
+	font-size: 0.95em;
 }
 
 .value p {
