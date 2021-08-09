@@ -97,7 +97,7 @@ window.onload = () => {
         navSec.appendChild(p2)
 
         img.alt = "Preview"
-        img.src = app.imgSrc == '' ? `D:/Pictures/photo-coming-soon.jpg` : app.imgSrc
+        img.src = app.imgSrc == '' ? `../assets/images/apps/photo-coming-soon.jpg` : app.imgSrc
 
         app.tags.forEach(tag => article.appendChild(buildAppTag(tag.toLowerCase())))
 
