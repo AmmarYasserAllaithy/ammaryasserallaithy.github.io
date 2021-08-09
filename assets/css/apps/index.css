@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Gabriela, "Segoe UI", sans-serif;
+  outline: none;
+}
+
+/*
+ ! Custom Classes 
+ */
+.bold, .container .app .app__info .app__info__title {
+  font-weight: 600;
+}
+
+.colored, header, .tabs .tab-layout .tab, .container .app .app__info .app__info__title {
+  color: #b15e62;
+}
+
+.shadow, header, .tabs .tab-layout, .container .app {
+  -webkit-box-shadow: 0 0 15px #00000011;
+          box-shadow: 0 0 15px #00000011;
+}
+
+.max-lines-1, .max-lines-2, .container .app .app__info .app__info__desc, .container .app .app__info .app__info__title, .container .app .app__info .app__info__tags {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  word-break: break-word;
+}
+
+.max-lines-2, .container .app .app__info .app__info__desc {
+  -webkit-line-clamp: 2;
+}
+
+.no-max-lines, .container .app.wide .app__info .app__info__desc,
+.container .app.wide .app__info .app__info__tags {
+  display: block;
+}
+
+.spacing {
+  letter-spacing: 0.2rem;
+}
+
+.hide, .container .app.hide {
+  display: none !important;
+}
+
+/*
+ ! Tag 
+ */
+a {
+  text-decoration: none;
+  color: #b15e62;
+}
+
+a:hover {
+  color: #247a7c;
+  text-decoration: underline;
+}
+
+sup {
+  opacity: 0.8;
+}
+
+header {
+  padding: 1em;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+header span {
+  letter-spacing: 0.25em;
+}
+
+/*
+ ! Apps 
+ */
+.tabs {
+  margin: 1em;
+  text-align: center;
+}
+
+.tabs .tab-layout {
+  display: inline-block;
+  border-radius: 50px;
+  padding: 0.5em;
+}
+
+.tabs .tab-layout .tab {
+  display: inherit;
+  padding: inherit;
+  cursor: pointer;
+}
+
+.tabs .tab-layout .tab.selected {
+  color: #fff;
+  background: #b15e62;
+  border-radius: inherit;
+}
+
+.container {
+  max-width: 1100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1em auto;
+}
+
+.container .app {
+  border-radius: 10px;
+  margin: 1em;
+  border-top: 6px solid #b15e6255;
+}
+
+.container .app:hover {
+  border-top: 6px solid #b15e62;
+}
+
+.container .app.wide {
+  grid-column: 1 / -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.container .app.wide .app__preview {
+  width: 30%;
+  border-bottom: none;
+}
+
+.container .app.wide .app__preview .app__preview__img {
+  border-radius: 10px 0 0 10px;
+  opacity: 1;
+}
+
+.container .app.wide .app__info {
+  width: 70%;
+  padding: 1rem 1.5rem;
+}
+
+.container .app.wide .app__nav {
+  color: #b15e62;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.35em;
+}
+
+.container .app.wide .app__nav span {
+  padding: inherit;
+}
+
+.container .app .app__preview {
+  height: 250px;
+  margin: 1em;
+}
+
+.container .app .app__preview .app__preview__img {
+  width: 100%;
+  height: 100%;
+}
+
+.container .app .app__preview .app__preview__img:hover {
+  opacity: 1;
+}
+
+.container .app .app__info {
+  padding: 0.5em 1em;
+}
+
+.container .app .app__info .app__info__margin, .container .app .app__info .app__info__title, .container .app .app__info .app__info__desc, .container .app .app__info .app__info__tags {
+  margin: 0.75rem auto;
+}
+
+.container .app .app__info .app__info__title code {
+  font-family: consolas, monospace;
+}
+
+.container .app .app__info .app__info__desc {
+  opacity: 0.9;
+}
+
+.container .app .app__info .app__info__tags {
+  opacity: 0.65;
+}
+
+.container .app .app__info .app__info__tags__a {
+  margin: 0 2px;
+}
+
+.container .app .app__nav {
+  display: none;
+}
+
+.under {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 3px 6px;
+  background: #00000011;
+  -webkit-transform: rotate(-90deg) translateX(-10%);
+          transform: rotate(-90deg) translateX(-10%);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+
+/*
+ ! Media Query 
+ */
+@media screen and (max-width: 900px) {
+  .container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .under {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=index.css.map */
