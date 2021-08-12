@@ -32,6 +32,11 @@ a {
 	color: var(--theme-clr);
 }
 
+a:hover {
+	color: var(--font-clr) !important;
+	font-weight: bold;
+}
+
 ul {
 	list-style: none;
 }
@@ -41,15 +46,93 @@ sup {
 	border-bottom: 1px solid #fff5;
 }
 
+body.CV_ONLY > .photo,
+body.CV_ONLY > .tab-layout,
+body.CV_ONLY > .view-pager > .full {
+	display: none;
+}
+
+/*! PHOTO */
+.photo {
+	display: block;
+	--r: 300px;
+	width: var(--r);
+	height: var(--r);
+	border-radius: var(--r);
+	margin: 2em auto;
+	box-shadow: 0 0 10px #11739e55;
+}
+
+/*! TAB LAYOUT */
+.tab-layout {
+	width: 500px;
+	margin: 2em auto;
+	text-align: center;
+	background: #11739e22;
+
+	display: flex;
+	justify-content: center;
+}
+
+.tab-layout,
+.tab {
+	border-radius: 100px;
+}
+
+.tab {
+	min-width: 50%;
+	padding: 0.75em;
+	font-size: 16pt;
+	font-weight: bold;
+}
+
+.tab.android {
+}
+
+.tab.full {
+}
+
+.tab:hover {
+	background: #11739e22;
+}
+
+.tab.selected {
+	background: #11739e;
+	color: white;
+}
+
+/*! VIEW PAGER */
+.view-pager {
+	width: 100%;
+}
+
+.page {
+	display: none;
+}
+
+.page.selected {
+	display: block;
+}
+
+.page.android {
+}
+
+.page.full {
+	padding: 0.5rem 0;
+}
+
 /*! A4 PAPER */
 .A4-paper {
 	width: 210mm;
-	height: 297mm;
 	background: #fff;
 	margin: auto;
 	box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
 	border-bottom: 10px solid #11739e99;
 	position: relative;
+}
+
+.A4-paper.page.android {
+	height: 297mm;
 }
 
 /*! MAIN SECTIONS */
@@ -227,6 +310,17 @@ h3::after {
 	margin-right: calc(1em - 7px);
 }
 
+.edu .content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.edu .content .scholarship {
+	/* background: #00000009; */
+	margin: 5px 0;
+	line-height: 19px;
+}
+
 /*! ROW */
 .row {
 	overflow: hidden;
@@ -252,6 +346,12 @@ h3::after {
 	border-top: 1px solid var(--theme-clr-inv);
 }
 
+.skills .row .key {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
 .backslash {
 	color: var(--theme-clr-inv);
 	font-weight: bold;
@@ -259,8 +359,8 @@ h3::after {
 
 .skill {
 	display: inline-block;
-	padding: 1px 9px;
-	margin: 1px -2px;
+	padding: 2px 10.5px;
+	margin: 1px -2.5px;
 	background: #11739e1a;
 	background: var(--theme-clr-inv);
 
