@@ -35,6 +35,11 @@
 	padding: 0.5em 1em;
 	background: #f6951c;
 	color: white;
+	font-size: 1em;
+}
+
+.cv:hover {
+	background: #c7e2f6;
 }
 
 .link {
