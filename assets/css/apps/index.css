@@ -182,10 +182,6 @@ header span {
   margin: 0.75rem auto;
 }
 
-.container .app .app__info .app__info__title code {
-  font-family: consolas, monospace;
-}
-
 .container .app .app__info .app__info__desc {
   opacity: 0.9;
 }
@@ -198,6 +194,10 @@ header span {
   margin: 0 2px;
 }
 
+.container .app .app__info code {
+  font-family: consolas, monospace;
+}
+
 .container .app .app__nav {
   display: none;
 }
@@ -207,7 +207,6 @@ header span {
   left: 0;
   bottom: 0;
   padding: 3px 6px;
-  background: #00000011;
   -webkit-transform: rotate(-90deg) translateX(-10%);
           transform: rotate(-90deg) translateX(-10%);
   -webkit-transform-origin: 0 0;
