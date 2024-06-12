@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  box-sizing: border-box;
+  unicode-bidi: plaintext;
+}
+
+*:not(ol, ul, li) {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: rgb(169, 221, 214);
+}
+
+body {
+  background: rgba(255, 255, 255, 0.32);
+  box-shadow: 0 8px 32px 0 rgba(20, 118, 55, 0.1);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border-radius: 10px;
+  font-family: Bellota, sans-serif;
+  max-width: 1280px;
+  margin: 2rem auto;
+  transition: color 0.5s, background-color 0.5s;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media screen and (max-width: 768px) {
+  body {
+    margin: auto;
+  }
+}
+
+header {
+  place-content: space-between;
+  padding: 2rem;
+}
+header,
+header nav {
+  display: flex;
+  place-items: center;
+}
+header nav {
+  gap: 1rem;
+}
+
+h1:not(.default) {
+  margin: 1rem auto;
+  letter-spacing: 1px;
+  font-size: 30px;
+}
+
+h2:not(.default) {
+  margin: 1rem auto;
+  letter-spacing: 1px;
+  font-size: 22px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+a:hover {
+  scale: 1.1;
+}
+
+@media screen and (min-width: 768px) {
+  #home {
+    display: flex;
+    place-content: start;
+    place-items: center;
+    gap: 1rem;
+  }
+  #home > * {
+    flex-grow: 1;
+  }
+}
+#home aside {
+  flex-basis: 42%;
+}
+@media screen and (min-width: 768px) {
+  #home aside {
+    margin: 1rem;
+  }
+}
+#home aside.aside-photo {
+  order: 2;
+}
+#home aside.aside-photo img {
+  display: block;
+  width: 100%;
+}
+#home aside.aside-data {
+  order: 1;
+  padding: 1rem;
+}
+#home aside.aside-data .my-name {
+  font-size: 40pt;
+}
+#home aside .resume-p {
+  display: inline-block;
+}
+#home aside .resume-p a {
+  background: rgba(255, 255, 255, 0.32);
+  box-shadow: 0 8px 32px 0 rgba(20, 118, 55, 0.1);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border-radius: 10px;
+  display: flex;
+  place-content: start;
+  place-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4rem;
+  margin: 1rem auto;
+  font-weight: bold;
+}
+#home aside .links-div {
+  display: flex;
+  place-content: start;
+  place-items: start;
+  gap: 1rem;
+  margin: 1rem auto;
+}
+#home aside .links-div a:last-child {
+  margin-left: 0.5rem;
+}/*# sourceMappingURL=style.css.map */
