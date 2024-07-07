@@ -7,7 +7,7 @@
   opacity: 0.7;
 }
 
-.bold {
+.bold, #profile.page .category {
   font-weight: bold;
 }
 
@@ -128,10 +128,16 @@ a:hover {
 #profile.page .experience {
   margin: 1rem auto;
 }
+#profile.page .category {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  margin: 0.3rem;
+  border-radius: 6px;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
 
 marquee {
   font-style: italic;
   padding: 0.5rem 0;
-  -webkit-backdrop-filter: blur(1px);
-          backdrop-filter: blur(1px);
 }/*# sourceMappingURL=style.css.map */
