@@ -5,10 +5,12 @@ qsa('div.number-card').forEach(card =>
       childs: [
         creator({
           tag: 'h1',
+          cls: 'card-title',
           text: card.getAttribute('number')
         }),
         creator({
           tag: 'p',
+          cls: 'card-label',
           text: card.getAttribute('label')
         })
       ]

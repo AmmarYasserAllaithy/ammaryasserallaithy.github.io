@@ -3,7 +3,7 @@
   padding: 2rem;
 }
 
-.dim {
+.dim, marquee, #profile.page .cards-article div .card-label {
   opacity: 0.7;
 }
 
@@ -13,6 +13,14 @@
 
 .center {
   text-align: center;
+}
+
+.gone {
+  display: none;
+}
+
+.small {
+  font-size: 90%;
 }
 
 * {
@@ -62,6 +70,10 @@ header nav {
 header nav {
   gap: 1rem;
 }
+header nav a {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
 
 h1:not(.default) {
   margin: 1rem auto;
@@ -87,6 +99,11 @@ a:hover {
 
 #profile.page {
   line-height: 140%;
+  font-size: 1.25rem;
+}
+#profile.page .summary {
+  text-align: justify;
+  line-height: 2rem;
 }
 #profile.page .cards-article {
   display: flex;
@@ -97,16 +114,24 @@ a:hover {
   margin: 1rem;
 }
 #profile.page .cards-article div {
-  flex-basis: 170px;
+  flex-grow: 1;
   margin: 1rem;
   padding: 1rem;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.0666666667);
   border-radius: 1rem;
   text-align: center;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
-#profile.page .cards-article div h1 {
-  margin-top: 0.5rem;
+#profile.page .cards-article div .card-title {
+  margin: 1rem auto;
 }
 #profile.page .experience {
   margin: 1rem auto;
+}
+
+marquee {
+  font-style: italic;
+  padding: 0.5rem 0;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
 }/*# sourceMappingURL=style.css.map */
