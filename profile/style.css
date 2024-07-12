@@ -34,18 +34,14 @@
 }
 
 html {
-  background: rgb(169, 221, 214);
+  background: #f7f7ff;
 }
 
 body {
-  background: rgba(255, 255, 255, 0.32);
   box-shadow: 0 8px 32px 0 rgba(20, 118, 55, 0.1);
-  backdrop-filter: blur(9.5px);
-  -webkit-backdrop-filter: blur(9.5px);
-  border-radius: 10px;
   font-family: Bellota, sans-serif;
   max-width: 1280px;
-  margin: 2rem auto;
+  margin: auto;
   transition: color 0.5s, background-color 0.5s;
   scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
@@ -60,7 +56,7 @@ body {
 
 header {
   place-content: space-between;
-  padding: 2rem;
+  padding: 1rem;
 }
 header,
 header nav {

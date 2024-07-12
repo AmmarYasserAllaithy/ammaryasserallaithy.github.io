@@ -34,18 +34,14 @@
 }
 
 html {
-  background: rgb(169, 221, 214);
+  background: #f7f7ff;
 }
 
 body {
-  background: rgba(255, 255, 255, 0.32);
   box-shadow: 0 8px 32px 0 rgba(20, 118, 55, 0.1);
-  backdrop-filter: blur(9.5px);
-  -webkit-backdrop-filter: blur(9.5px);
-  border-radius: 10px;
   font-family: Bellota, sans-serif;
   max-width: 1280px;
-  margin: 2rem auto;
+  margin: auto;
   transition: color 0.5s, background-color 0.5s;
   scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
@@ -60,7 +56,7 @@ body {
 
 header {
   place-content: space-between;
-  padding: 2rem;
+  padding: 1rem;
 }
 header,
 header nav {
@@ -97,6 +93,20 @@ a:hover {
   scale: 1.1;
 }
 
+.resume-p a {
+  background: rgba(255, 255, 255, 0.32);
+  box-shadow: 0 8px 32px 0 rgba(20, 118, 55, 0.1);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border-radius: 10px;
+  display: flex;
+  place-content: start;
+  place-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4rem;
+}
+
 @media screen and (min-width: 768px) {
   #home {
     display: flex;
@@ -119,21 +129,29 @@ a:hover {
 #home aside.aside-photo {
   order: 2;
 }
+@media screen and (max-width: 768px) {
+  #home aside.aside-photo {
+    background: rgba(0, 117, 162, 0.0666666667);
+  }
+}
 #home aside.aside-photo img {
   display: block;
-  width: 100%;
+  width: 90%;
+  margin: auto;
 }
 #home aside.aside-data {
   order: 1;
   padding: 1rem;
 }
 #home aside.aside-data .my-name {
-  font-size: 40pt;
+  font-size: 50pt;
+  -webkit-text-stroke: 1pt #0075a2;
+  color: transparent;
 }
-#home aside .resume-p {
+#home aside.aside-data .more-p {
   display: inline-block;
 }
-#home aside .resume-p a {
+#home aside.aside-data .more-p a {
   background: rgba(255, 255, 255, 0.32);
   box-shadow: 0 8px 32px 0 rgba(20, 118, 55, 0.1);
   backdrop-filter: blur(9.5px);
@@ -146,15 +164,14 @@ a:hover {
   padding: 0.5rem 1rem;
   border-radius: 4rem;
   margin: 1rem auto;
-  font-weight: bold;
 }
-#home aside .links-div {
+#home aside.aside-data .links-div {
   display: flex;
   place-content: start;
-  place-items: start;
+  place-items: center;
   gap: 1rem;
   margin: 1rem auto;
 }
-#home aside .links-div a:last-child {
+#home aside.aside-data .links-div a:last-child {
   margin-left: 0.5rem;
 }/*# sourceMappingURL=style.css.map */
