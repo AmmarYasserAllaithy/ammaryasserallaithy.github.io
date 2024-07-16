@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Carter One");
 .page {
   padding: 2rem;
 }
@@ -24,6 +24,10 @@
 }
 
 * {
+  font-family: Carter One, serif;
+}
+
+* {
   box-sizing: border-box;
   unicode-bidi: plaintext;
 }
@@ -39,7 +43,6 @@ html {
 
 body {
   box-shadow: 0 8px 32px 0 rgba(20, 118, 55, 0.1);
-  font-family: Bellota, sans-serif;
   max-width: 1280px;
   margin: auto;
   transition: color 0.5s, background-color 0.5s;
@@ -97,11 +100,13 @@ header p a {
   border-radius: 4rem;
 }
 
-#profile.page {
-  line-height: 150%;
+#profile.page h2 {
+  letter-spacing: 2px;
+  color: transparent;
+  -webkit-text-stroke: thin rgb(0, 117, 162);
 }
-#profile.page .summary {
-  line-height: 1.8rem;
+#profile.page h2:not(:first-of-type) {
+  margin-top: 3rem;
 }
 #profile.page .statistics-article {
   display: flex;
@@ -123,14 +128,6 @@ header p a {
   margin: 1rem auto;
   color: transparent;
   -webkit-text-stroke: thin rgb(0, 117, 162);
-}
-#profile.page h2 {
-  font-size: 150%;
-  color: transparent;
-  -webkit-text-stroke: 0.77px rgb(0, 117, 162);
-}
-#profile.page h2:not(:first-of-type) {
-  margin-top: 3rem;
 }
 #profile.page .experience {
   margin: 1rem auto;
