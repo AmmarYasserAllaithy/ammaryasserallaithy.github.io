@@ -3,7 +3,7 @@
   padding: 2rem;
 }
 
-.dim, marquee, #profile.page .cards-article div .card-label {
+.dim, marquee, #profile.page .statistics-article div .card-label {
   opacity: 0.7;
 }
 
@@ -57,18 +57,8 @@ body {
 header {
   place-content: space-between;
   padding: 1rem;
-}
-header,
-header nav {
   display: flex;
   place-items: center;
-}
-header nav {
-  gap: 1rem;
-}
-header nav a {
-  font-weight: bold;
-  letter-spacing: 1px;
 }
 
 h1:not(.default) {
@@ -93,44 +83,63 @@ a:hover {
   scale: 1.1;
 }
 
+header p a {
+  background: rgba(255, 255, 255, 0.32);
+  box-shadow: 0 8px 32px 0 rgba(20, 118, 55, 0.1);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border-radius: 10px;
+  display: flex;
+  place-content: start;
+  place-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4rem;
+}
+
 #profile.page {
-  line-height: 140%;
-  font-size: 1.25rem;
+  line-height: 150%;
 }
 #profile.page .summary {
-  text-align: justify;
-  line-height: 2rem;
+  line-height: 1.8rem;
 }
-#profile.page .cards-article {
+#profile.page .statistics-article {
   display: flex;
   place-content: center;
   place-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
   flex-wrap: wrap;
-  margin: 1rem;
 }
-#profile.page .cards-article div {
+#profile.page .statistics-article div {
   flex-grow: 1;
-  margin: 1rem;
+  flex-basis: 200px;
   padding: 1rem;
   border-radius: 1rem;
   text-align: center;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.0666666667);
 }
-#profile.page .cards-article div .card-title {
+#profile.page .statistics-article div .card-title {
+  color: rgb(0, 117, 162);
   margin: 1rem auto;
+  color: transparent;
+  -webkit-text-stroke: thin rgb(0, 117, 162);
+}
+#profile.page h2 {
+  font-size: 150%;
+  color: transparent;
+  -webkit-text-stroke: 0.77px rgb(0, 117, 162);
+}
+#profile.page h2:not(:first-of-type) {
+  margin-top: 3rem;
 }
 #profile.page .experience {
   margin: 1rem auto;
 }
 #profile.page .category {
   display: inline-block;
-  padding: 0.2rem 0.5rem;
-  margin: 0.3rem;
-  border-radius: 6px;
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+  color: rgb(0, 117, 162);
+  margin: 0.5rem auto;
+  letter-spacing: 1px;
 }
 
 marquee {
