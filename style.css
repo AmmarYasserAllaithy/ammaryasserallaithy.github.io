@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Carter One");
+@import url("https://fonts.googleapis.com/css?family=Salsa");
 .page {
   padding: 2rem;
 }
@@ -25,6 +26,10 @@
 
 * {
   font-family: Carter One, serif;
+}
+
+* {
+  font-family: Salsa, serif;
 }
 
 * {
@@ -73,7 +78,7 @@ h1:not(.default) {
 h2:not(.default) {
   margin: 1rem auto;
   letter-spacing: 1px;
-  font-size: 22px;
+  font-size: 24px;
 }
 
 a {
@@ -86,7 +91,10 @@ a:hover {
   scale: 1.1;
 }
 
-header p a {
+body {
+  min-height: 100vh;
+}
+body header p a {
   background: rgba(255, 255, 255, 0.32);
   box-shadow: 0 8px 32px 0 rgba(20, 118, 55, 0.1);
   backdrop-filter: blur(9.5px);
@@ -99,52 +107,52 @@ header p a {
   padding: 0.5rem 1rem;
   border-radius: 4rem;
 }
-
 @media screen and (min-width: 768px) {
-  #home {
+  body #home {
     display: flex;
-    place-content: start;
+    place-content: center;
     place-items: center;
     gap: 1rem;
+    height: calc(100vh - 5rem);
   }
-  #home > * {
+  body #home > * {
     flex-grow: 1;
   }
 }
-#home aside {
+body #home aside {
   flex-basis: 42%;
 }
 @media screen and (min-width: 768px) {
-  #home aside {
+  body #home aside {
     margin: 1rem;
   }
 }
-#home aside.aside-photo {
+body #home aside.aside-photo {
   order: 2;
 }
 @media screen and (max-width: 768px) {
-  #home aside.aside-photo {
+  body #home aside.aside-photo {
     background: rgba(0, 117, 162, 0.0666666667);
   }
 }
-#home aside.aside-photo img {
+body #home aside.aside-photo img {
   display: block;
   width: 90%;
   margin: auto;
 }
-#home aside.aside-data {
+body #home aside.aside-data {
   order: 1;
   padding: 1rem;
 }
-#home aside.aside-data .my-name {
+body #home aside.aside-data .my-name {
   font-size: 50pt;
-  -webkit-text-stroke: 1pt #0075a2;
+  -webkit-text-stroke: 1px #0075a2;
   color: transparent;
 }
-#home aside.aside-data .more-p {
+body #home aside.aside-data .more-p {
   display: inline-block;
 }
-#home aside.aside-data .more-p a {
+body #home aside.aside-data .more-p a {
   background: rgba(255, 255, 255, 0.32);
   box-shadow: 0 8px 32px 0 rgba(20, 118, 55, 0.1);
   backdrop-filter: blur(9.5px);
@@ -158,13 +166,13 @@ header p a {
   border-radius: 4rem;
   margin: 1rem auto;
 }
-#home aside.aside-data .links-div {
+body #home aside.aside-data .links-div {
   display: flex;
   place-content: start;
   place-items: center;
   gap: 1rem;
   margin: 1rem auto;
 }
-#home aside.aside-data .links-div a:last-child {
+body #home aside.aside-data .links-div a:last-child {
   margin-left: 0.5rem;
 }/*# sourceMappingURL=style.css.map */
