@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Carter One");
-@import url("https://fonts.googleapis.com/css?family=Salsa");
+@import url("https://fonts.googleapis.com/css?family=Lato");
 .page {
   padding: 2rem;
 }
@@ -25,11 +24,7 @@
 }
 
 * {
-  font-family: Carter One, serif;
-}
-
-* {
-  font-family: Salsa, serif;
+  font-family: Lato, serif;
 }
 
 * {
@@ -145,9 +140,9 @@ body #home aside.aside-data {
   padding: 1rem;
 }
 body #home aside.aside-data .my-name {
-  font-size: 50pt;
-  -webkit-text-stroke: 1px #0075a2;
   color: transparent;
+  -webkit-text-stroke: 1px #0075a2;
+  font-size: 50pt;
 }
 body #home aside.aside-data .more-p {
   display: inline-block;

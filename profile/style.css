@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Carter One");
-@import url("https://fonts.googleapis.com/css?family=Salsa");
+@import url("https://fonts.googleapis.com/css?family=Lato");
 .page {
   padding: 2rem;
 }
 
-.dim, marquee, #profile.page .statistics-article div .card-label, #profile.page .summary {
+.dim, marquee, #profile.page .statistics-article div .card-label {
   opacity: 0.7;
 }
 
@@ -25,11 +24,7 @@
 }
 
 * {
-  font-family: Carter One, serif;
-}
-
-* {
-  font-family: Salsa, serif;
+  font-family: Lato, serif;
 }
 
 * {
@@ -107,8 +102,7 @@ header p a {
 
 #profile.page h2 {
   letter-spacing: 2px;
-  color: transparent;
-  -webkit-text-stroke: thin rgb(0, 117, 162);
+  color: rgb(0, 117, 162);
 }
 #profile.page h2:not(:first-of-type) {
   margin-top: 3rem;
