@@ -3,7 +3,7 @@
   padding: 2rem;
 }
 
-.dim, marquee, #profile.page .statistics-article div .card-label {
+.dim, marquee, #profile.page .summary .statistics-article div .card-label {
   opacity: 0.7;
 }
 
@@ -100,21 +100,28 @@ header p a {
   border-radius: 4rem;
 }
 
+#profile.page {
+  line-height: 160%;
+}
 #profile.page h2 {
   letter-spacing: 2px;
   color: rgb(0, 117, 162);
+  margin: 2rem auto;
 }
 #profile.page h2:not(:first-of-type) {
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
-#profile.page .statistics-article {
+#profile.page .summary h3 {
+  margin: 1rem auto;
+}
+#profile.page .summary .statistics-article {
   display: flex;
   place-content: center;
   place-items: center;
   gap: 1rem;
   flex-wrap: wrap;
 }
-#profile.page .statistics-article div {
+#profile.page .summary .statistics-article div {
   flex-grow: 1;
   flex-basis: 200px;
   padding: 1rem;
@@ -122,14 +129,26 @@ header p a {
   text-align: center;
   box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.0666666667);
 }
-#profile.page .statistics-article div .card-title {
-  color: rgb(0, 117, 162);
+#profile.page .summary .statistics-article div .card-title {
   margin: 1rem auto;
-  color: transparent;
-  -webkit-text-stroke: thin rgb(0, 117, 162);
 }
+#profile.page .education,
 #profile.page .experience {
-  margin: 1rem auto;
+  display: flex;
+  place-content: start;
+  place-items: start;
+  gap: 1rem;
+  margin: 2rem auto;
+}
+#profile.page .education figure,
+#profile.page .experience figure {
+  width: 60px;
+  height: auto;
+}
+#profile.page .education figure img,
+#profile.page .experience figure img {
+  width: 100%;
+  height: 100%;
 }
 #profile.page .category {
   display: inline-block;
