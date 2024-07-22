@@ -142,13 +142,17 @@ header p a {
 }
 #profile.page .education figure,
 #profile.page .experience figure {
-  width: 60px;
-  height: auto;
+  flex-basis: 60px;
+  height: 100%;
 }
 #profile.page .education figure img,
 #profile.page .experience figure img {
   width: 100%;
   height: 100%;
+}
+#profile.page .education div,
+#profile.page .experience div {
+  flex-basis: calc(100% - 50px - 1rem);
 }
 #profile.page .category {
   display: inline-block;
