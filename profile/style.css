@@ -1,13 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Carter One");
 @import url("https://fonts.googleapis.com/css?family=Lato");
 .page {
   padding: 2rem;
 }
 
-.dim, marquee, #profile.page .summary .statistics-article div .card-label {
+.dim, marquee {
   opacity: 0.7;
 }
 
-.bold, #profile.page .category {
+.bold, #profile.page .skills-wrapper .category {
   font-weight: bold;
 }
 
@@ -111,26 +112,39 @@ header p a {
 #profile.page h2:not(:first-of-type) {
   margin-top: 4rem;
 }
-#profile.page .summary h3 {
-  margin: 1rem auto;
-}
 #profile.page .summary .statistics-article {
+  margin: 0.5rem auto;
+  border-radius: 1rem;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.0666666667);
+  overflow: hidden;
+}
+#profile.page .summary .statistics-article,
+#profile.page .summary .statistics-article div {
   display: flex;
   place-content: center;
   place-items: center;
-  gap: 1rem;
+  gap: 1px;
   flex-wrap: wrap;
 }
 #profile.page .summary .statistics-article div {
   flex-grow: 1;
-  flex-basis: 200px;
+  flex-basis: 250px;
+  flex-direction: column;
+  gap: 1rem;
   padding: 1rem;
-  border-radius: 1rem;
-  text-align: center;
-  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.0666666667);
 }
 #profile.page .summary .statistics-article div .card-title {
-  margin: 1rem auto;
+  margin: 0;
+}
+#profile.page .summary .statistics-article div .card-title,
+#profile.page .summary .statistics-article div .card-label {
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  #profile.page .summary .statistics-article div {
+    flex-direction: row;
+    justify-content: start;
+  }
 }
 #profile.page .education,
 #profile.page .experience {
@@ -154,11 +168,27 @@ header p a {
 #profile.page .experience div {
   flex-basis: calc(100% - 50px - 1rem);
 }
-#profile.page .category {
+#profile.page .skills-wrapper .category {
   display: inline-block;
   color: rgb(0, 117, 162);
-  margin: 0.5rem auto;
+  margin: 0.5rem;
   letter-spacing: 1px;
+}
+@media screen and (min-width: 976px) {
+  #profile.page .skills-wrapper {
+    display: flex;
+    place-content: start;
+    place-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  #profile.page .skills-wrapper > * {
+    flex-grow: 1;
+  }
+  #profile.page .skills-wrapper p {
+    flex-grow: 1;
+    flex-basis: 30vw;
+  }
 }
 
 marquee {
