@@ -4,7 +4,7 @@
   padding: 2rem;
 }
 
-.dim, marquee {
+.dim, marquee, #profile.page .experience .exp-desc, #profile.page .experience .position-date p {
   opacity: 0.7;
 }
 
@@ -20,7 +20,7 @@
   display: none;
 }
 
-.small {
+.small, #profile.page .experience .company, #profile.page .experience .position-date p {
   font-size: 90%;
 }
 
@@ -146,27 +146,39 @@ header p a {
     justify-content: start;
   }
 }
-#profile.page .education,
 #profile.page .experience {
+  background: rgba(255, 255, 255, 0.32);
+  box-shadow: 0 8px 32px 0 rgba(20, 118, 55, 0.1);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border-radius: 10px;
+  margin: 2rem 1rem;
+  padding: 1.5rem;
+}
+#profile.page .experience .position-date {
   display: flex;
-  place-content: start;
-  place-items: start;
+  place-content: space-between;
+  place-items: center;
   gap: 1rem;
-  margin: 2rem auto;
+  flex-wrap: wrap;
 }
-#profile.page .education figure,
-#profile.page .experience figure {
-  flex-basis: 60px;
-  height: 100%;
+#profile.page .experience ul {
+  margin: 1rem auto;
+  padding: 0 2rem;
 }
-#profile.page .education figure img,
-#profile.page .experience figure img {
-  width: 100%;
-  height: 100%;
+#profile.page .experience .exp-desc {
+  margin-top: 1rem;
 }
-#profile.page .education div,
-#profile.page .experience div {
-  flex-basis: calc(100% - 50px - 1rem);
+@media screen and (max-width: 768px) {
+  #profile.page .experience {
+    margin: 2rem auto;
+  }
+  #profile.page .experience .position-date {
+    display: block;
+  }
+  #profile.page .experience .company {
+    font-weight: bold;
+  }
 }
 #profile.page .skills-wrapper .category {
   display: inline-block;
