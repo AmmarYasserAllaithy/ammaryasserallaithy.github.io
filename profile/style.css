@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Carter One");
-@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 .page {
   padding: 2rem;
 }
@@ -25,7 +24,7 @@
 }
 
 * {
-  font-family: Lato, serif;
+  font-family: Nunito, monospace, serif;
 }
 
 * {

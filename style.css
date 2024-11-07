@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Carter One");
-@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 .page {
   padding: 2rem;
 }
@@ -25,7 +24,7 @@
 }
 
 * {
-  font-family: Lato, serif;
+  font-family: Nunito, monospace, serif;
 }
 
 * {
@@ -141,7 +140,7 @@ body #home aside.aside-data {
   padding: 1rem;
 }
 body #home aside.aside-data .my-name {
-  color: #0075a2;
+  color: rgb(0, 117, 162);
   font-size: 48pt;
 }
 body #home aside.aside-data .more-p {
