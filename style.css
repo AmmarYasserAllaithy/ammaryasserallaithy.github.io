@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 .page {
   padding: 2rem;
 }
@@ -28,6 +29,10 @@
 }
 
 * {
+  font-family: Poppins, monospace, serif;
+}
+
+* {
   box-sizing: border-box;
   unicode-bidi: plaintext;
 }
@@ -38,11 +43,12 @@
 }
 
 html {
-  background: #f7f7ff;
+  background: #FDFDFF;
 }
 
 body {
   box-shadow: 0 8px 32px 0 rgba(20, 118, 55, 0.1);
+  color: #393D3F;
   max-width: 1280px;
   margin: auto;
   transition: color 0.5s, background-color 0.5s;
@@ -65,15 +71,33 @@ header {
 }
 
 h1:not(.default) {
+  color: black;
   margin: 1rem auto;
   letter-spacing: 1px;
   font-size: 30px;
 }
 
 h2:not(.default) {
+  color: black;
   margin: 1rem auto;
   letter-spacing: 1px;
   font-size: 24px;
+}
+
+h3:not(.default) {
+  color: black;
+}
+
+h4:not(.default) {
+  color: black;
+}
+
+h5:not(.default) {
+  color: black;
+}
+
+h6:not(.default) {
+  color: black;
 }
 
 a {
