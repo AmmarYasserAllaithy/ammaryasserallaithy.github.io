@@ -135,39 +135,48 @@ header p a {
 #profile.page h2:not(:first-of-type) {
   margin-top: 4rem;
 }
-#profile.page .summary .statistics-article {
-  margin: 0.5rem auto;
-  border-radius: 1rem;
-  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.0666666667);
-  overflow: hidden;
-}
-#profile.page .summary .statistics-article,
-#profile.page .summary .statistics-article div {
-  display: flex;
-  place-content: center;
-  place-items: center;
-  gap: 1px;
-  flex-wrap: wrap;
-}
-#profile.page .summary .statistics-article div {
-  flex-grow: 1;
-  flex-basis: 250px;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 1rem;
-}
-#profile.page .summary .statistics-article div .card-title {
-  margin: 0;
-}
-#profile.page .summary .statistics-article div .card-title,
-#profile.page .summary .statistics-article div .card-label {
-  color: white;
-}
-@media screen and (max-width: 768px) {
-  #profile.page .summary .statistics-article div {
-    flex-direction: row;
-    justify-content: start;
+#profile.page .summary {
+  /*
+  .statistics-article {
+    margin: 0.5rem auto;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 15px #0001;
+    overflow: hidden;
+
+    &,
+    div {
+      @include flex($items: center, $content: center, $wrap: true, $gap: 1px);
+    }
+
+    div {
+      flex-grow: 1;
+      flex-basis: 250px;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+
+      .card-title {
+        margin: 0;
+      }
+
+      .card-title,
+      .card-label {
+        color: white;
+      }
+
+      @media screen and (max-width: 768px) {
+        & {
+          flex-direction: row;
+          justify-content: start;
+        }
+      }
+    }
   }
+  */
+}
+#profile.page .summary span {
+  display: inline-block;
+  letter-spacing: 0.75px;
 }
 #profile.page .experience {
   background: rgba(255, 255, 255, 0.32);
@@ -177,7 +186,7 @@ header p a {
   border-radius: 10px;
   border-radius: 0;
   margin: 1pt;
-  padding: 1.5rem;
+  padding: 1.25rem;
 }
 #profile.page .experience .position-date {
   display: flex;
@@ -198,11 +207,11 @@ header p a {
   padding: 0 2rem;
 }
 @media screen and (max-width: 768px) {
-  #profile.page .experience {
-    margin: 2rem auto;
-  }
   #profile.page .experience .position-date {
     display: block;
+  }
+  #profile.page .experience ul {
+    padding: 0 1.25rem;
   }
 }
 #profile.page .skills-wrapper .category {
